@@ -1,0 +1,9 @@
+[22-Mar-2022 04:26:27 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[22-Mar-2022 09:49:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'Method calenderAction not found in controller App\Controllers\Customer'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php(88): Core\Controller->__call('calender', Array)
+#1 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('customer/calend...')
+#2 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Controller.php' on line 27

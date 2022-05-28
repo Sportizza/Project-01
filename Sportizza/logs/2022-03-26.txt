@@ -1,0 +1,611 @@
+[26-Mar-2022 06:26:25 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sports_arena_profile.profile_photo' in 'field list''
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php(101): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Admin.php(164): App\Models\AdminModel::arenaProfileView('100000023')
+#2 [internal function]: App\Controllers\Admin->viewarenaprofileAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('viewarenaprofil...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('admin/viewarena...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php' on line 101
+[26-Mar-2022 06:26:51 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sports_arena_profile.profile_photo' in 'field list''
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php(101): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Admin.php(164): App\Models\AdminModel::arenaProfileView('100000023')
+#2 [internal function]: App\Controllers\Admin->viewarenaprofileAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('viewarenaprofil...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('admin/viewarena...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php' on line 101
+[26-Mar-2022 06:27:04 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sports_arena_profile.profile_photo' in 'field list''
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php(101): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Admin.php(164): App\Models\AdminModel::arenaProfileView('100000022')
+#2 [internal function]: App\Controllers\Admin->viewarenaprofileAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('viewarenaprofil...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('admin/viewarena...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php' on line 101
+[26-Mar-2022 06:34:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Spadministratio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:34:31 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1693): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1693, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(547): App\Models\SpAdministrationStaffModel::findFacilityByName('100000042', 'Badminton Court...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatefacilit...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1693
+[26-Mar-2022 06:34:32 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1693): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1693, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(547): App\Models\SpAdministrationStaffModel::findFacilityByName('100000042', 'Badminton Court...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatefacilit...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1693
+[26-Mar-2022 06:34:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Spadministratio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:35:01 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Spadministratio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:35:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'I')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'I')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'In')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:08 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'Indoor Cricket ...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:09 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'Indoor Cricket ...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:20 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'Indoor Cricket ...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:20 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'Indoor Cricket ...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:24 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php(1812): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1812, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Spadministrationstaff.php(629): App\Models\SpAdministrationStaffModel::findFacilityExcludeByName('100000042', '100000040', 'Indoor Cricket ...')
+#2 [internal function]: App\Controllers\Spadministrationstaff->validateAndUpdatefacilitynameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateAndUpda...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpAdministrationStaffModel.php' on line 1812
+[26-Mar-2022 06:35:26 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('spadministratio...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:37:38 UTC] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(640): Core\Error::errorHandler(8, 'Undefined index...', '/Applications/M...', 640, Array)
+#1 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#2 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php' on line 640
+[26-Mar-2022 06:40:27 UTC] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(640): Core\Error::errorHandler(8, 'Undefined index...', '/Applications/M...', 640, Array)
+#1 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#2 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php' on line 640
+[26-Mar-2022 06:40:28 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:29 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:29 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:31 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0771')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:31 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07718')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:32 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077184')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:34 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0771845')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:34 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07718459')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:40:35 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077184597')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:01 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:01 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0770')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:01 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07708')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:02 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0770')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:03 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07707')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:03 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077078')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:04 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07707')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:04 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0770')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:04 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('077')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:04 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:06 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('078')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0785')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07856')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:07 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('078561')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:08 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0785619')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:08 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('07856190')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:09 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('078561906')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:09 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0785619064')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:10 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1634): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1634, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(643): App\Models\SpArenaManagerModel::findMobileNo('0785619064')
+#2 [internal function]: App\Controllers\Sparenamanager->validatemobilenumberAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validatemobilen...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1634
+[26-Mar-2022 06:41:14 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('mn')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:14 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('m')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:14 UTC] Uncaught exception: 'ErrorException' with message 'Undefined index: arg'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(626): Core\Error::errorHandler(8, 'Undefined index...', '/Applications/M...', 626, Array)
+#1 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#2 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#5 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php' on line 626
+[26-Mar-2022 06:41:23 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('a')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:24 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('ar')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:24 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aro')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:24 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aros')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:25 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('arosh')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:25 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('arosha')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:25 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshan')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:26 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshan9')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:26 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshan99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:28 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshan99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:33 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshans99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:34 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshanse99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:34 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshansen99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:34 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshansena99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:41:36 UTC] Uncaught exception: 'ErrorException' with message 'Trying to access array offset on value of type bool'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php(1613): Core\Error::errorHandler(8, 'Trying to acces...', '/Applications/M...', 1613, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Sparenamanager.php(629): App\Models\SpArenaManagerModel::findUserName('aroshansena99')
+#2 [internal function]: App\Controllers\Sparenamanager->validateusernameAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('validateusernam...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('sparenamanager/...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/SpArenaManagerModel.php' on line 1613
+[26-Mar-2022 06:52:31 UTC] Uncaught exception: 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sports_arena_profile.profile_photo' in 'field list''
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php(101): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Admin.php(164): App\Models\AdminModel::arenaProfileView('100000022')
+#2 [internal function]: App\Controllers\Admin->viewarenaprofileAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('viewarenaprofil...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('admin/viewarena...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/AdminModel.php' on line 101
+[26-Mar-2022 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:56:51 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:57:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:57:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:57:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:57:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[26-Mar-2022 06:57:21 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96

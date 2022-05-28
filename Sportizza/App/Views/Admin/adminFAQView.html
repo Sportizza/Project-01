@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - FAQ</title>
+        <!-- CSS File -->
+        <link
+        rel="stylesheet" href="/Assets/css/Admin/admin-FAQ.css?version=4">
+        <!-- Manifest file -->
+        <link
+        rel="manifest" href="/./manifest.json"/>
+        <!-- FontAwesome Icon -->
+        <script src="https://kit.fontawesome.com/3220c9480a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <div class="nav-left">
+                <div class="logo-container">
+                    <a href="/">
+                        <i class="fas fa-running "></i>
+                        <span class="logo-name">Sportizza</span>
+                    </a>
+                </div>
+
+                <div
+                    class="nav-right">
+                    <!-- Profile button -->
+                    <div class="nav-profile">
+                        <button class="openbutton" onclick="openpopupform()">
+                            <div class="profile-details">
+                                <img src={{ current_user.profile_pic }} class="profile-picture">
+                                <div class="username">{{ current_user.first_name }}
+                                    {{ current_user.last_name }}</div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Signout button -->
+                    <div class="sign-in-out-btn">
+                        <button onclick="open_popup_signout_message()">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- start popup form for edit profile -->
+        <div id="myForm" class="sectionpopnav">
+            <div class="formsectionprofile" id="formEditUserProfile">
+                <div>
+                    <button class="closebutton" onclick="closepopupform()">❌</button>
+                </div>
+
+                <div class="nav-user-edit-from">
+                    <div class="details">
+                        <div class="input-box">
+                            <h5>Name:</h5>
+                            <p>
+                                {{ current_user.first_name }}
+                                {{ current_user.last_name }}
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <h5>Username:</h5>
+                            <p>
+                                {{ current_user.username }}
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <h5>Mobile:</h5>
+                            <p>
+                                {{ current_user.primary_contact }}</p>
+                        </div>
+                    </div>
+                    <div class="editProPic">
+                        <img id="form-profile-picture" src={{ current_user.profile_pic }} alt="">
+                    </div>
+                </div>
+                <div class="edit-profile-link">
+                    <a href="\Edituserdetails\EditProfileAction">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+        <!-- end popup form for edit profile -->
+
+        <!-- start pop up sign out section -->
+        <div id="popup_signout" class="sectionpopnav">
+            <div class="formsectionnav">
+                <div>
+                    <button class="closebutton" onclick="close_popup_signout_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Sign Out</h1>
+                        <p>Do your really want to sign out now?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_buttonnav">
+                        {% if current_user %}
+                            <a href="/logout">
+                                YES</a>
+                        {% endif %}
+                    </button>
+                    <button onclick="close_popup_signout_message()" class="popup_delete_buttonnav">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up sign out section -->
+
+        <!-- Start OF the POP up FAQ Delete -->
+        <div id="popup_delete" class="sectionpop ">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_delete_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>
+                            FAQ Remove
+                        </h1>
+                        <p style="margin:auto">
+                            Do you really want to remove this FAQ?
+                        </p>
+                    </div>
+                </form>
+                <div style="display:flex">
+
+                    <button class="popup_delete_button">
+                        <a id="deleteFAQbutton" href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_delete_message()" class="popup_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End OF the POP up FAQ Delete -->
+
+        <section
+            class="page-container">
+
+            <!-- SIDE NAVIGATION BAR - START -->
+            <div class="sidebar">
+                <div class="sidebar-container">
+                    <div class="side-menu">
+                        <i class="fas fa-bars fa-2x " id="side-menu-open-btn"></i>
+                        <i class="fas fa-times fa-2x" id="side-menu-close-btn"></i>
+                    </div>
+                    <ul class="side-menu-list">
+                        <li>
+                            <a href="/admin/chart" class="side-menu-li">
+                                <i class="fas fa-chart-bar"></i>
+                                <p class="side-menu-item">Analytics</p>
+                            </a>
+                            <p class="side-menu-tooltip">Analytics</p>
+                        </li>
+                        <li>
+                            <a href="/admin/manageuser" class="side-menu-li">
+                                <i class="fas fa-users"></i>
+                                <p class="side-menu-item">Manage Users</p>
+                            </a>
+                            <p class="side-menu-tooltip">Manage Users</p>
+                        </li>
+
+                        <li>
+                            <a href="/admin/faq" class="side-menu-li">
+                                <i class="fas fa-question"></i>
+                                <p class="side-menu-item">FAQ</p>
+                            </a>
+                            <p class="side-menu-tooltip">FAQ</p>
+                        </li>
+
+                        <li>
+                            <a href="/admin/ratings" class="side-menu-li">
+                                <i class="fas fa-star"></i>
+                                <p class="side-menu-item">Ratings</p>
+                            </a>
+                            <p class="side-menu-tooltip">Ratings</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SIDE NAVIGATION BAR - END -->
+
+            <div class="page-content-container">
+                <div class="container">
+                    <h1 class="page-header">FAQ</h1>
+                    <div class="tab">
+                        <button class="booking_tab tab-btn active" onclick="openTab(event, 'view_bookings')">
+                            <i class="fas fa-search"></i>
+                            <p>View FAQ</p>
+                        </button>
+                        <button class="booking_tab tab-btn" onclick="openTab(event, 'add_bookings')">
+                            <i class="fas fa-plus"></i>
+                            <p>Create FAQ</p>
+                        </button>
+                        <button class="booking_tab tab-btn" onclick="openTab(event, 'cancel_booking')">
+                            <i class="fas fa-trash-alt"></i>
+                            <p>
+                                Delete FAQ</p>
+                        </button>
+                        <button class="booking_tab tab-btn" onclick="openTab(event, 'booking_payment')">
+                            <i class="fas fa-edit"></i>
+                            <p>Update FAQ</p>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- VIEW FAQ TAB -->
+                <div id="view_bookings" class="booking_tab_content active" style="display: block;">
+                    <table class="booking-table" id="faq-table">
+                        <thead>
+
+                            <tr class="booking-thead-first-tr">
+                                <th class="booking-table-first-th">
+                                    <div class="booking-table-filter-container">
+                                        <div class="booking-table-search-container">
+                                            <input type="search" name="search" placeholder="Search By FAQ type" onkeyup="searchTable()" id="search-faq">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="booking-thead-second-tr">
+                                <th class="b-first-th">FAQ Type</th>
+                                <th class="quiz_td">Question</th>
+                                <th class="solution_th">Solution</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for FAQ in viewFAQs %}
+                                <tr>
+                                    <td data-label="FAQ Type :">{{ FAQ.type }}</td>
+                                    <td data-label="Question :" class="quiz_td">{{ FAQ.question }}</td>
+                                    <td data-label="Solution :" class="solution_td">{{ FAQ.answer }}</td>
+
+                                </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- ADD FAQ TAB -->
+                <div id="add_bookings" class="booking_tab_content">
+                    <div class="form-container">
+                        <form id="createFAQForm" method="POST" action="/Admin/createfaq" onsubmit="validateCreateFAQForm()">
+
+                            <div class="input-box">
+                                <label for="type" class="faqLabel">Type</label>
+                                <div class="options-container">
+                                    <div class="custom-select">
+                                        <select id="type" name="type" onchange="validateType()">
+                                            <option value="0">Select type</option>
+                                            <option value="customer">Customer</option>
+                                            <option value="sports_arena">Sports Arena</option>
+                                        </select>
+                                        <div class="helper-text" id="other-categoryMsg"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <label for="question" class="faqLabel">Question :
+                            </label>
+                            <textarea id="question" class="faqInput" name="question" placeholder="Type your question..." rows="1" onfocusout="validateQuestion()"></textarea>
+                            <div class="helper-text" id="questionMsg"></div>
+
+                            <label for="solution" class="faqLabel">Solution :
+                            </label>
+                            <textarea id="solution" class="faqInput" rows="4" name="solution" placeholder="Type your solution..." onfocusout="validateSolution()"></textarea>
+                            <div class="helper-text" id="solutionMsg"></div>
+
+                            <input type="submit" value="Create" class="faqSubmit"/>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- DELETE FAQ TAB -->
+                <div id="cancel_booking" class="booking_tab_content">
+                    <table class="booking-table" id="faq-delete-table">
+                        <thead>
+                            <tr class="booking-thead-first-tr">
+                                <th class="booking-table-first-th">
+                                    <div class="booking-table-filter-container">
+                                        <div class="booking-table-search-container">
+                                            <input type="search" name="search" placeholder="Search By FAQ type" onkeyup="searchdeleteFaqTable()" id="search-faq-delete">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr class="booking-thead-second-tr">
+                                <th class="b-first-th">FAQ Type</th>
+                                <th class="quiz_td">Question</th>
+                                <th class="solution_td">Solution</th>
+                                <th class="b-last-th">Remove FAQ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for FAQ in viewFAQs %}
+                                <tr>
+                                    <td data-label="FAQ Type :">{{ FAQ.type }}</td>
+                                    <td data-label="Question :" class="quiz_td">{{ FAQ.question }}</td>
+                                    <td data-label="Solution :" class="solution_td" style="text-align: justify;">{{ FAQ.answer }}
+                                    </td>
+                                    <td class="trash-btn-padding-res">
+                                        <a class="trash-btn" onclick="open_popup_delete_message('{{ FAQ.faq_id }}')">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- UPDATE FAQ TAB -->
+                <div id="booking_payment" class="booking_tab_content">
+                    <div class="form-container">
+                        <form id="updateFAQForm" method="post" action="" onsubmit="validateUpdateFAQForm()">
+                            <div class="input-box">
+                                <label for="utype" class="faqLabel">Type</label>
+                                <div class="options-container">
+                                    <div class="custom-select">
+                                        <select id="utype" name="type" onchange="validateUType()">
+                                            <option value="0">Select type</option>
+                                            <option value="customer">Customer</option>
+                                            <option value="sports_arena">Sports Arena</option>
+                                        </select>
+                                        <div class="helper-text" id="other-categoryMsg"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <label for="uquestion" class="faqLabel">Question :
+                            </label>
+                            <select id="uquestion" name="question" onchange="validateUQuestion()">
+                                <option value="0">Please select a category</option>
+                            </select>
+                            <div class="helper-text" id="uquestionMsg"></div>
+
+                            <label for="usolution" class="faqLabel">Solution :
+                            </label>
+                            <textarea id="usolution" class="faqInput" rows="4" name="updated_solution" placeholder="Type your solution..." onfocusout="validateUSolution()"></textarea>
+                            <div class="helper-text" id="usolutionMsg"></div>
+
+                            <input type="submit" value="Update" class="faqSubmit"/>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Start of Footer -->
+        <footer>
+            <div class="copyright">
+                <p>
+                    Copyright &copy;2021 All rights reserved | Sportizza Inc.
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <script type="text/javascript" src="/Assets/js/lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/Assets/js/signup_validation.js?version=8.0"></script>
+        <script type="text/javascript" src="/Assets/js/Admin/adminFAQ.js?version=3"></script>
+        <script type="text/javascript" src="/Assets/js/Admin/adminFAQupdateQuestion.js?v=8"></script>
+        <script type="text/javascript" src="/Assets/js/Admin/adminFAQupdateSolution.js"></script>
+
+    </body>
+
+</html>

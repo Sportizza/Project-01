@@ -1,0 +1,57 @@
+[20-Mar-2022 15:36:05 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Home/searcharen...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[20-Mar-2022 15:37:11 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\App\Models\HomeModel.php(76): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Group_Project-_1\Sportizza\App\Controllers\Home.php(80): App\Models\HomeModel::homeSearchArenas('Colombo-03', 'Badminton-Court...', '')
+#2 [internal function]: App\Controllers\Home->searcharenasajaxAction()
+#3 C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Controller.php(23): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php(88): Core\Controller->__call('searcharenasaja...', Array)
+#5 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Home/searcharen...')
+#6 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\App\Models\HomeModel.php' on line 76
+[20-Mar-2022 16:00:57 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:01:06 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:01:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:01:25 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:01:37 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:02:17 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 16:06:01 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Spadministratio...')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[20-Mar-2022 18:30:14 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 18:30:23 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 18:30:39 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[20-Mar-2022 18:32:55 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Undefined not found'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('undefined')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93

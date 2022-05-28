@@ -1,0 +1,17 @@
+[23-Mar-2022 03:21:38 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('Home/searcharen...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[23-Mar-2022 03:58:28 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('home/manifest.j...')
+#1 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php' on line 96
+[23-Mar-2022 09:36:07 UTC] Uncaught exception: 'ErrorException' with message 'Undefined index: rate'
+Stack trace: #0 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/CustomerModel.php(707): Core\Error::errorHandler(8, 'Undefined index...', '/Applications/M...', 707, Array)
+#1 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Controllers/Customer.php(259): App\Models\CustomerModel::customerAddFeedback(Array)
+#2 [internal function]: App\Controllers\Customer->customeraddfeedbackAction()
+#3 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Controller.php(23): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/Core/Router.php(88): Core\Controller->__call('customeraddfeed...', Array)
+#5 /Applications/MAMP/htdocs/Group_Project-_1/Sportizza/public/index.php(45): Core\Router->dispatch('customer/custom...')
+#6 {main}
+Thrown in '/Applications/MAMP/htdocs/Group_Project-_1/Sportizza/App/Models/CustomerModel.php' on line 707

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin - Manage Users</title>
+        <!-- CSS File -->
+        <link
+        rel="stylesheet" href="/Assets/css/Admin/admin-manage-users.css?version=4">
+        <!-- Manifest file -->
+        <link
+        rel="manifest" href="/./manifest.json"/>
+        <!-- FontAwesome Icon -->
+        <script src="https://kit.fontawesome.com/3220c9480a.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <div class="nav-left">
+                <div class="logo-container">
+                    <a href="/">
+                        <i class="fas fa-running "></i>
+                        <span class="logo-name">Sportizza</span>
+                    </a>
+                </div>
+
+                <div
+                    class="nav-right">
+                    <!-- Profile button -->
+                    <div class="nav-profile">
+                        <button class="openbutton" onclick="openpopupform()">
+                            <div class="profile-details">
+                                <img src={{ current_user.profile_pic }} class="profile-picture">
+                                <div class="username">{{ current_user.first_name }}
+                                    {{ current_user.last_name }}</div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Signout button -->
+                    <div class="sign-in-out-btn">
+                        <button onclick="open_popup_signout_message()">Sign Out</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- start popup form for edit profile -->
+        <div id="myForm" class="sectionpopnav">
+            <div class="formsectionprofile" id="formEditUserProfile">
+                <div>
+                    <button class="closebutton" onclick="closepopupform()">❌</button>
+                </div>
+
+                <div class="nav-user-edit-from">
+                    <div class="details">
+                        <div class="input-box">
+                            <h5>Name:</h5>
+                            <p>
+                                {{ current_user.first_name }}
+                                {{ current_user.last_name }}
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <h5>Username:</h5>
+                            <p>
+                                {{ current_user.username }}
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <h5>Mobile:</h5>
+                            <p>
+                                {{ current_user.primary_contact }}</p>
+                        </div>
+                    </div>
+                    <div class="editProPic">
+                        <img id="form-profile-picture" src={{ current_user.profile_pic }} alt="">
+                    </div>
+                </div>
+                <div class="edit-profile-link">
+                    <a href="\Edituserdetails\EditProfileAction">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+        <!-- end popup form for edit profile -->
+
+        <!-- start pop up sign out section -->
+        <div id="popup_signout" class="sectionpopnav">
+            <div class="formsectionnav">
+                <div>
+                    <button class="closebutton" onclick="close_popup_signout_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Sign Out</h1>
+                        <p>Do your really want to sign out now?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_buttonnav">
+                        {% if current_user %}
+                            <a href="/logout">
+                                YES</a>
+                        {% endif %}
+                    </button>
+                    <button onclick="close_popup_signout_message()" class="popup_delete_buttonnav">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up sign out section -->
+
+        <!-- Start OF the POP up Bookig Cancel -->
+        <div id="popup_delete" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_delete_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1 style="margin:auto">
+                            Rating Remove
+                        </h1>
+                        <p style="margin:auto">
+                            Do you really want to remove this rating?
+                        </p>
+                    </div>
+                </form>
+                <div style="display:flex">
+
+                    <button class="popup_delete_button">
+                        <a href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_delete_message()" class="popup_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End OF the POP up Booking Cancel -->
+
+
+        <!-- start pop up remove customer section -->
+        <div id="popup_rmve_customers" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_rmve_customers_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Remove Customer</h1>
+                        <p>Do your really want to remove this customer?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_button">
+                        <a id="deletecustomerbutton" href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_rmve_customers_message()" class="popup_delete_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up remove customer section -->
+
+        <!-- start pop up view sports arena section -->
+        <div id="popup_view_arenas" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_view_arenas_message()">❌</button>
+                </div>
+                <div id="displayarenadetails" class="displayarenadetails" style="margin:auto"></div>
+            </div>
+        </div>
+        <!-- end pop up view sports arena section -->
+
+        <!-- start pop up add sports arena section -->
+        <div id="popup_add_arenas" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_add_arenas_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Add Sports Arena</h1>
+                        <p>Are you sure you have checked the validity of this sports arena?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_button">
+                        <a id="addarenasbutton" href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_add_arenas_message()" class="popup_delete_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up add sports arena section -->
+
+        <!-- start pop up blacklist sports arena section -->
+        <div id="popup_view_complaints" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_view_complaints_message()">❌</button>
+                </div>
+                <div id="displaycomplaints" class="displaycomplaints" style="margin:auto"></div>
+            </div>
+        </div>
+        <!-- end pop up blacklist sports arena section -->
+
+        <!-- start pop up remove sports arena section -->
+        <div id="popup_rmve_arenas" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_rmv_arenas_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Remove Sports Arena</h1>
+                        <p>Are you sure you want to remove this sports arena?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_button">
+                        <a id="deletearenasbutton" href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_rmv_arenas_message()" class="popup_delete_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up remove sports arena section -->
+
+        <!-- start pop up blacklist sports arena section -->
+        <div id="popup_blck_arenas" class="sectionpop">
+            <div class="formsection">
+                <div>
+                    <button class="closebutton" onclick="close_popup_blck_arenas_message()">❌</button>
+                </div>
+                <form action="/action_page.php" style="margin:20px">
+                    <div style="margin:auto">
+                        <h1>Blacklist Sports Arena</h1>
+                        <p>Are you sure want to blacklist this sports arena?</p>
+                    </div>
+                </form>
+                <div style="display:flex">
+                    <button class="popup_button">
+                        <a id="blacklistarenasbutton" href="">
+                            YES</a>
+                    </button>
+                    <button onclick="close_popup_blck_arenas_message()" class="popup_delete_button">
+                        NO
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end pop up blacklist sports arena section -->
+
+
+        <!-- MAIN BODY CONTENT -->
+
+
+        <section
+            class="page-container">
+
+            <!-- SIDE NAVIGATION BAR - START -->
+            <div class="sidebar">
+                <div class="sidebar-container">
+                    <div class="side-menu">
+                        <i class="fas fa-bars fa-2x " id="side-menu-open-btn"></i>
+                        <i class="fas fa-times fa-2x" id="side-menu-close-btn"></i>
+                    </div>
+                    <ul class="side-menu-list">
+                        <li>
+                            <a href="/admin/chart" class="side-menu-li">
+                                <i class="fas fa-chart-bar"></i>
+                                <p class="side-menu-item">Analytics</p>
+                            </a>
+                            <p class="side-menu-tooltip">Analytics</p>
+                        </li>
+                        <li>
+                            <a href="/admin/manageuser" class="side-menu-li">
+                                <i class="fas fa-users"></i>
+                                <p class="side-menu-item">Manage Users</p>
+                            </a>
+                            <p class="side-menu-tooltip">Manage Users</p>
+                        </li>
+
+                        <li>
+                            <a href="/admin/faq" class="side-menu-li">
+                                <i class="fas fa-question"></i>
+                                <p class="side-menu-item">FAQ</p>
+                            </a>
+                            <p class="side-menu-tooltip">FAQ</p>
+                        </li>
+
+                        <li>
+                            <a href="/admin/ratings" class="side-menu-li">
+                                <i class="fas fa-star"></i>
+                                <p class="side-menu-item">Ratings</p>
+                            </a>
+                            <p class="side-menu-tooltip">Ratings</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SIDE NAVIGATION BAR - END -->
+
+            <div class="page-content-container">
+                <div class="container">
+                    <h1 class="page-header">Manage Users</h1>
+                    <div class="tab">
+                        <button class="booking_tab tab-btn active" onclick="openTab(event, 'view_bookings')">
+                            <i class="fas fa-user"></i>
+                            <p>Remove Customers</p>
+                        </button>
+                        <button class="booking_tab tab-btn" onclick="openTab(event, 'add_bookings')">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Add Sports Arenas</p>
+                        </button>
+                        <button class="booking_tab tab-btn" onclick="openTab(event, 'cancel_booking')">
+                            <i class="fas fa-trash-alt"></i>
+                            <p>Remove Arenas</p>
+                        </button>
+                    </div>
+
+                    <!-- REMOVE CUSTOMERS TAB -->
+                    <div id="view_bookings" class="booking_tab_content active" style="display: block;">
+                        <table class="booking-table" id="customer-table">
+                            <thead>
+                                <tr class="booking-thead-first-tr">
+                                    <th class="booking-table-first-th">
+                                        <div class="booking-table-filter-container">
+                                            <div class="booking-table-search-container">
+                                                <input type="search" name="search" placeholder="Search by username" onkeyup="searchCustomersTable()" id="search-customers">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </th>
+                                    </th>
+                                </tr>
+                                <tr class="booking-thead-second-tr">
+                                    <th class="b-first-th">User ID</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                    <th>Primary Contact</th>
+
+                                    <th>Remove Account</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for customer in customers %}
+                                    <tr>
+                                        <td data-label="User ID :">{{ customer.user_id }}</td>
+                                        <td data-label="First Name :">{{ customer.first_name }}</td>
+                                        <td data-label="Last Name :">{{ customer.last_name }}</td>
+                                        <td data-label="Username :">{{ customer.username }}</td>
+                                        <td data-label="Primary Contact :">{{ customer.primary_contact }}</td>
+
+                                        <td class="trash-btn-padding-res">
+                                            <a class="trash-btn" onclick="open_popup_rmve_customers_message('{{ customer.user_id }}')">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- ADD SPORTS ARENAS TAB -->
+                    <div id="add_bookings" class="booking_tab_content">
+                        <table class="booking-table" id="inactive-arenas-table">
+                            <thead>
+                                <tr class="booking-thead-first-tr">
+                                    <th class="booking-table-first-th">
+                                        <div class="booking-table-filter-container">
+                                            <div class="booking-table-search-container">
+                                                <input type="search" name="search" placeholder="Search by sports arena name" onkeyup="searchInactiveArenasTable()" id="search-inactive-arenas">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr class="booking-thead-second-tr">
+                                    <th class="expandHeader">Sports Arena Name</th>
+                                    <th class="expandHeader">Registered Date</th>
+                                    <th class="expandHeader">Contact Number</th>
+                                    <th class="expandHeader">Request Status</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for arenas in inactiveArenas %}
+                                    <tr class="popup" ">
+                                        <td data-label="Sports Arena Name :" class="expandHeader">{{ arenas.sa_name }}</td>
+                                        <td data-label="Registered Date :" class="expandHeader">{{ arenas.date }}</td>
+                                        <td data-label="Contact Number :" class="expandHeader">{{ arenas.contact_no }}</td>
+                                        <td data-label="Accept Request :" class="acceptAcc expandHeader">
+                                            <a class="eye-btn" href="/admin/viewarenaprofile/{{ arenas.s_a_profile_id }}">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a class="tick-btn" onclick="open_popup_add_arenas_message('{{ arenas.s_a_profile_id }}')">
+                                                <i class="fas fa-check"></i>
+                                            </a>
+                                        </td>
+
+                                    </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- REMOVE SPORTS ARENAS TAB -->
+                    <div id="cancel_booking" class="booking_tab_content">
+                        <table class="booking-table" id="active-arenas-table">
+                            <thead>
+                                <tr class="booking-thead-first-tr">
+                                    <th class="booking-table-first-th">
+                                        <div class="booking-table-filter-container">
+                                            <div class="booking-table-search-container">
+                                                <input type="search" name="search" placeholder="Search by sports arena name" onkeyup="searchActiveArenasTable()" id="search-active-arenas">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr class="booking-thead-second-tr">
+                                    <th>Sports Arena ID
+                                    </th>
+                                    <th>Sports Arena Name
+                                    </th>
+                                    <th>Complaint count
+                                    </th>
+                                    <th>Account Status
+                                    </th>
+                                    <th>Blacklist Sports Arena
+                                    </th>
+                                    <th>Remove Account
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for arenas in activeArenas %}
+                                    <tr>
+
+                                        <td data-label="Sports Arena ID :">{{ arenas.sports_arena_id }}</td>
+                                        <td data-label="Sports Arena name :">{{ arenas.sa_name }}</td>
+                                        <td data-label="Complaint :">{{ arenas.count }}<button id="popup_cmp_button" class="popup_cmp_button" value="{{ arenas.sports_arena_id }}" onclick="open_popup_view_complaints_message()">View Complaints</button>
+                                        </td>
+                                        <td data-label="Account Status :">{{ arenas.account_status }}</td>
+                                        <td data-label="Blacklist Arena :" class="blacklistAcc">
+                                            <a class="blck-btn" onclick="open_popup_blck_arenas_message('{{ arenas.sports_arena_id }}')">
+                                                <i class="fas fa-exclamation"></i>
+                                            </a>
+                                        </td>
+                                        <td data-label="Remove Sports Arena :" class="trash-btn-padding-res">
+                                            <a class="trash-btn" onclick="open_popup_rmv_arenas_message('{{ arenas.sports_arena_id }}')">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start of Footer -->
+        <footer>
+            <div class="copyright">
+                <p>
+                    Copyright &copy;2021 All rights reserved | Sportizza Inc.
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <script type="text/javascript" src="/Assets/js/lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/Assets/js/Admin/adminManageuser.js?version=1"></script>
+        <script type="text/javascript" src="/Assets/js/Admin/adminManageuserViewComplaints.js?version=1"></script>
+
+    </body>
+
+</html>

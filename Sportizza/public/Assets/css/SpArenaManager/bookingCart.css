@@ -1,0 +1,60 @@
+.cartDisplay{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.closebtn a{
+    position: relative;
+    float: right;
+    bottom: 50px;
+    font-size: 20px;
+}
+
+form#formCheckout {
+    display: flex;
+}
+.customerDetails {
+    width: 100%;
+    float: left;
+}
+.cartContent {
+    height: 50vh;
+}
+.page-container {
+   display:flex;
+   justify-content: center;
+}
+.cartPage form .sp-details {
+   flex-direction:column;
+}
+form .sp-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.carterror{
+    color: #e74c3c;
+    font-size: 14px;
+    font-weight:500;
+    display:none;
+    text-align: center;
+}
+
+.cartDisplay {
+    justify-content: start;
+}
+/* .closebtn a:hover {
+    color: ;
+} */
+
+@media screen and (max-width: 576px){
+.cartDisplay .content .priceNPay {
+    width: 90vw;
+    margin: auto;
+    /* padding: 10px 15px; */
+}
+
+.copyright {
+   padding: 0;
+}
+}

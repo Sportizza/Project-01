@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportizza</title>
+    <script src="https://kit.fontawesome.com/3220c9480a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Assets/css/visitor.css?version=2" />
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json" />
+
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <label class="logo"><i class="fas fa-running "></i>Sportizza</label>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#sport-arena" onclick="uncheck()">Sports Arena</a></li>
+                <li><a href="#reviews" onclick="uncheck()">Reviews</a></li>
+                <li><a href="#faq" onclick="uncheck()">Faq</a></li>
+                <li><a href="#about" onclick="uncheck()">About us</a></li>
+                <li><a href="#contact" onclick="uncheck()">Contact us</a></li>
+                <li><a href="/login">Log In</a></li>
+                <li><a href="#" onclick="open_popup_signup_message()">Sign Up</a></li>
+                <li><a href="\Directtoprofile">Profile</a></li>
+            </ul>
+        </nav>
+        <!-- End of navigation bar -->
+    </header>
+    <div id="popup_signup" class="sectionpop ">
+        <div class="signupsection">
+
+            <div>
+                <button class="closebutton" onclick="close_popup_signup_message()">❌</button>
+            </div>
+            <div class="signup-sec-head">
+                <h1>
+                    Sign Up As
+                </h1>
+            </div>
+            <div style="display:flex">
+
+                <a href="/signup" class="popup_button">
+                    Customer
+                </a>
+                <a href="/arenaReg" class="popup_button">
+                    Sports Arena
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="page-container">
+        <div class="visitor-home" id="home">
+            <div class="visitor-welcome">
+                <div class="visitor-welcome-desc">
+                    <h1 class="welcome-title">Book a Sports Arena</h1>
+                    <p class="visitor-welcome-text">
+                        Book a Sports Arena without any hassle with the number 1 Sports arena Booking App in Srilanka.
+                    </p>
+                    <a href="#sport-arena" class="visitor-book-now-btn">Book Now</a>
+                </div>
+            </div>
+            <div class="visitor-slide-show">
+                <div class="visitor-slideshow-container">
+
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image1.svg" style="width:100%">
+                    </div>
+
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image2.svg" style="width:100%">
+                    </div>
+
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image3.svg" style="width:100%">
+                    </div>
+
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image4.svg" style="width:100%">
+                    </div>
+
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image6.svg" style="width:100%">
+                    </div>
+                    <div class="visitor-slides fade">
+                        <img src="/Assets/images/visitor/slides/image7.jpg" style="width:100%">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-container" id="sport-arena">
+        <div class="visitor-sport-arenas">
+            <div class="section-header">
+                <h3 class="title" data-title="">Sports Arenas</h3>
+            </div>
+            <div class="visitor-sp-arenas-con">
+                
+                <form action="/home/searcharenas" method="post">
+                    <div class="visitor-sp-arena-filter">
+                        <div class="location-filter dropdown">
+                            
+                            <label for="cars">Location</label>
+                            <select id="location" name="location">
+                                {% if search_result['location']==null %}
+                                <option value='select location'>select location</option>
+                                {% else %}
+
+                                <option style="display:none">{{search_result['location']}}</option>
+                                {% endif %}
+
+                                {% for location in locations %}
+                                <option value={{location.location}}>{{location.location}}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="category-filter dropdown">
+                            
+                            <label for="cars">Category</label>
+                            <select id="category" name="category">
+
+                                {% if search_result['category']==null %}
+                                <option value='select category'>select category</option>
+                                {% else %}
+
+                                <option style="display:none">{{search_result['category']}}</option>
+                                {% endif %}
+
+
+                                {% for category in categories %}
+                                <option value={{category.category}}>{{category.category}}</option>
+                                {% endfor %}
+
+                            </select>
+                        </div>
+                        <div class="search-filter">
+
+                            <input type="search" name="name" id="name" placeholder="Search by arena name...">
+                        
+                        </div>
+
+
+                    </div>
+                </form>
+
+
+
+            </div>
+            <div class="search-results">
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="page-container" id="reviews">
+        <div class="visitor-reviews">
+            <div class="section-header">
+                <h3 class="title" data-title="">Customer Reviews</h3>
+            </div>
+            <div class="customer-reviews">
+
+                {% for feedback in feedbacks %}
+                <div class="customer-review-card">
+                    <div class="review-header">
+                        <div class="review-star-rate">
+                            {% for x in range(1,feedbacks[0].feedback_rating) %}
+                            <i class="fas fa-star"></i>
+                            {% endfor %}
+                        </div>
+                        <div class="review-sp-arena-name">
+                            {{feedback.sa_name}}
+                        </div>
+                    </div>
+                    <div class="review-desc">
+                        {{feedback.description}}
+                    </div>
+                    <div class="review-footer">
+                        <div class="review-info">
+                            <img class="reviewer-img" src={{feedback.profile_pic}}></img>
+                            <h3 class="reviewer-name">{{feedback.first_name}} {{feedback.last_name}}</h3>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+    <section class="page-container" id="faq">
+        <div class="faq">
+            <div class="section-header">
+                <h3 class="title" data-title="">FAQs</h3>
+            </div>
+            <div class="faq-category">
+                <button class="faq-btn active" onclick="openFaqTab(event,'customer-faq')">FAQ BY CUSTOMER</button>
+                <button class="faq-btn" onclick="openFaqTab(event,'sparena-faq')">FAQ BY SPORT ARENA</button>
+            </div>
+            <div class="faq-container">
+                <div class="faq-content" id="customer-faq" style="display: block;">
+                    {% for faq in faqs %}
+                    <button class="faq-accordian">{{faq.question}}</button>
+                    <div class="faq-accordian-content">
+                        <p>{{faq.answer}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="faq-content" id="sparena-faq">
+
+                    {% for faq in arenafaqs %}
+                    <button class="faq-accordian">{{faq.question}}</button>
+                    <div class="faq-accordian-content">
+                        <p>{{faq.answer}}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="page-container" id="about">
+        <div class="about-us">
+            <div class="section-header">
+                <h3 class="title" data-title="Who are We">About Us</h3>
+            </div>
+            <div class="about-us-container">
+                <div class="about-us-desc">
+                    <h3 class="about-us-title">Hello,</h3>
+                    <p class="about-us-text">We are a group of second year Undergraduates from
+                        University of Colombo School of Computing interested
+                        in contributing to the greater well being of the nation.</p>
+                    <a href="#our-team" class="read-more-about-btn">Read More</a>
+                </div>
+                <div class="about-us-image">
+                    <img src="/Assets/images/visitor/about-us/about-us.svg" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="page-container" id="our-team">
+        <div class="our-team">
+            <div class="section-header">
+                <h3 class="title" data-title="">Our Team</h3>
+            </div>
+            <div class="group-members-cards">
+                <div class="group-member-card">
+                    <div class="group-member-header">
+                        <div class="group-member-img">
+                            <img src="/Assets/images/Team members/maneth.png" alt="" />
+                        </div>
+                        <div class="group-member-details">
+                            <div class="group-member-name">
+                                <h2 class="member-name">Maneth Wijetunga</h2>
+                                <h4 class="member-title">Developer</h4>
+                            </div>
+                            <div class="social-media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-member-desc">
+                        Maneth is an Undergraduate at UCSC studying in the field
+                        of Computer Science. His areas of interest include Finance,
+                        Data Science & Computing .
+                    </div>
+                </div>
+                <div class="group-member-card">
+                    <div class="group-member-header">
+                        <div class="group-member-img">
+                            <img src="/Assets/images/Team members/jonathan.png" alt="" />
+                        </div>
+                        <div class="group-member-details">
+                            <div class="group-member-name">
+                                <h2 class="member-name">Jonathan Dass</h2>
+                                <h4 class="member-title">Developer</h4>
+                            </div>
+                            <div class="social-media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-member-desc">
+                        Jonathan is an Undergraduate at UCSC studying in the field of Computer Science.
+                        His areas of interest include Web development, Network Forensics & Cyber Security.
+                    </div>
+                </div>
+                <div class="group-member-card">
+                    <div class="group-member-header">
+                        <div class="group-member-img">
+                            <img src="/Assets/images/Team members/bhashitha.png" alt="" />
+                        </div>
+                        <div class="group-member-details">
+                            <div class="group-member-name">
+                                <h2 class="member-name">Bhashitha Ranasinghe</h2>
+                                <h4 class="member-title">Developer</h4>
+                            </div>
+                            <div class="social-media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-member-desc">
+                        Bhashitha is an Undergraduate at UCSC studying in the field
+                        of Computer Science. His areas of interest include Computer Networking, Web developing &
+                        Marketing .
+                    </div>
+                </div>
+                <div class="group-member-card">
+                    <div class="group-member-header">
+                        <div class="group-member-img">
+                            <img src="/Assets/images/Team members/prasad.png" alt="" />
+                        </div>
+                        <div class="group-member-details">
+                            <div class="group-member-name">
+                                <h2 class="member-name">Prasad Lakshan</h2>
+                                <h4 class="member-title">Developer</h4>
+                            </div>
+                            <div class="social-media-icons">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-member-desc">
+                        Prasad is an Undergraduate at UCSC studying in the field of Computer Science.
+                        His areas of interest include Web Development, Management & Data Science.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-container" id="contact">
+        <div class="contact-us">
+            <div class="contact-us-container">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h3 class="title" data-title="">Get In Touch</h3>
+                    </div>
+                    <div class="contact-info-container">
+                        <p class="contact-us-text">We are a group of second year Undergraduates from University of
+                            Colombo School of Computing interested in contributing
+                            to the greater well being of the nation.</p>
+                        <div class="contact-us-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>No 35, Reid Avenue, Colombo 00700, Sri Lanka</p>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-paper-plane"></i>
+                                <p class="info-text">contact.sportizza@gmail.com</p>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone-alt"></i>
+                                <p class="info-text">+94 77 123 4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="section-header">
+                        <h3 class="title" data-title="">Contact us</h3>
+                    </div>
+                    <form method="POST" action="home/contact" id="formVisitorContact"
+                        onsubmit="validateVisitorContactForm()">
+                        <div class="visitor-name">
+                            <div class="input-content">
+                                <input type="text" id="firstName" name="firstname" placeholder="First Name"
+                                    onfocusout="validateFirstName()">
+                                <div class="helper-text"></div>
+                            </div>
+                            <div class="input-content">
+                                <input type="text" id="lastName" name="lastname" placeholder="Last Name"
+                                    onfocusout="validateLastName()">
+                                <div class="helper-text"></div>
+                            </div>
+                        </div>
+                        <div class="input-content">
+                            <input type="email" id="email" name="email" placeholder="Email"
+                                onfocusout="validateEmail()">
+                            <div class="helper-text"></div>
+                        </div>
+                        <div class="input-content">
+                            <input type="text" id="subject" class="subject" name="subject" placeholder="Subject"
+                                onfocusout="validateSubject()">
+                            <div class="helper-text"></div>
+                        </div>
+                        <div class="input-content">
+                            <textarea placeholder="Message" id="message" cols="53" rows="5" name="message"
+                                onfocusout="validateMessage()"></textarea>
+                            <div class="helper-text"></div>
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-header">
+            <div class="footer-image">
+                <img src="/Assets/images/logos/Sportizza_Logo_Final.png" alt="" />
+            </div>
+            <div class="footer-header-text">
+                <h3 class="title-sm">Sportizza</h3>
+                <p class="text">
+                    We have the desire of building a healthy community.
+                </p>
+            </div>
+            <div class="footer-nav-col-1">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#sport-arena">SPORTS ARENAS</a>
+                    </li>
+                    <li>
+                        <a href="#reviews">REVIEWS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-nav-col-2">
+                <ul>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-base">
+            <div class="footer-copy">
+                <p class="text">
+                    Copyright &copy;2021 All rights reserved | Sportizza Inc.
+                </p>
+            </div>
+            <div class="footer-follow">
+                <div class="followus">
+                    <h3>Follow us</h3>
+                    <span class="footer-line"></span>
+                    <div class="social-media">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="back-btn">
+                            <i class="fas fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/Assets/js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/userLogin_validation.js?version=7"></script>
+    <script src="/Assets/js/signup_validation.js?version=4"></script>
+    <script src="/Assets/js/visitor.js?version=4"></script>
+</body>
+
+</html>

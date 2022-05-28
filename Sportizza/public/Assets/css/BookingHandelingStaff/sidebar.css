@@ -1,0 +1,24 @@
+.sidebar .sidebar-container .side-menu-list {
+  height: 30vh;
+}
+.booking-table tbody {
+    height: 51vh;
+}
+
+.side-menu-li .badge{
+position: absolute;
+top: 335px;
+left: 40px;
+padding: 1px 7px;
+border-radius: 100%;
+background: black;
+color: white;
+}
+
+@media screen and (max-width: 420px){
+
+.booking-table tbody {
+    height: 58vh;
+}
+
+}

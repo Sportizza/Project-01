@@ -1,0 +1,245 @@
+[17-Jan-2022 01:24:18 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:24:35 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:25:30 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:26:01 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:27:27 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:30:53 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:31:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:34:53 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:35:35 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:36:07 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:36:30 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:36:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:36:35 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 01:43:42 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 01:53:59 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 02:07:24 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 02:24:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 02:30:49 Europe/Berlin] Uncaught exception: 'ErrorException' with message 'Undefined array key "proPicImage"'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\App\Models\EditProfileModel.php(25): Core\Error::errorHandler(2, 'Undefined array...', 'F:\\xammp\\htdocs...', 25)
+#1 F:\xammp\htdocs\Group_Project-_1\Sportizza\App\Controllers\Edituserdetails.php(25): App\Models\EditProfileModel->__construct(Array)
+#2 [internal function]: App\Controllers\Edituserdetails->updatepasswordAction()
+#3 F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Controller.php(23): call_user_func_array(Array, Array)
+#4 F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php(88): Core\Controller->__call('updatepassword', Array)
+#5 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Edituserdetails...')
+#6 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\App\Models\EditProfileModel.php' on line 25
+[17-Jan-2022 02:39:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:19 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:21 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:39:22 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:45:16 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[17-Jan-2022 02:48:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:29 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:48:29 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:50:56 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:43 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:51:44 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:53:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:31 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:31 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:31 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:31 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:31 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 02:55:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('Assets/uploads/...')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[17-Jan-2022 03:10:33 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93

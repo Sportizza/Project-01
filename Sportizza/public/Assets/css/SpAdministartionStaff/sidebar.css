@@ -1,0 +1,14 @@
+.sidebar .sidebar-container .side-menu-list {
+    height: 50vh;
+}
+
+
+.side-menu-li .badge{
+  position: absolute;
+  top: 320px;
+  left: 40px;
+  padding: 1px 7px;
+  border-radius: 100%;
+  background: black;
+  color: white;
+}

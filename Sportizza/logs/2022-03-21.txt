@@ -1,0 +1,4 @@
+[21-Mar-2022 16:26:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\xampp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'C:\xampp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96

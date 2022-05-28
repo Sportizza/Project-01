@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings</title>
+    <!-- Top Nav bar CSS styles -->
+    <link rel="stylesheet" href="/Assets/css/navbar.css?version=4">
+    <!-- File Specific CSS Styles -->
+    <link rel="stylesheet" href="/Assets/css/Customer/newCustomerBooking.css">
+    <!-- Manifest file -->
+    <link rel="manifest" href="/./manifest.json" />
+    <!-- FontAwesome Icon -->
+    <script src="https://kit.fontawesome.com/3220c9480a.js" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@5.9.0/main.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.9.0/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/moment@5.5.0/main.global.min.js"></script>
+    <link rel="stylesheet" href="/Assets/css/customer/calender.css?version=1">
+
+
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo-container">
+                <a href="/">
+                    <i class="fas fa-running "></i>
+                    <span class="logo-name">Sportizza</span>
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <!-- Profile button -->
+                <div class="nav-profile">
+                    <button class="openbutton" onclick="openpopupform()">
+                        <div class="profile-details">
+                            <img src={{current_user.profile_pic}} class="profile-picture">
+                            <div class="username">{{current_user.first_name}} {{current_user.last_name}}</div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Signout button -->
+                <div class="sign-in-out-btn">
+                    <button onclick="open_popup_signout_message()">Sign Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- start popup for profile -->
+    <div id="myForm" class="sectionpopnav">
+        <div class="formsectionprofile" id="formEditUserProfile">
+            <div>
+                <button class="closebutton" onclick="closepopupform()">❌</button>
+            </div>
+
+            <div class="nav-user-edit-from">
+                <div class="details">
+                    <div class="input-box">
+                        <h5>Name:</h5>
+                        <p>
+                            {{current_user.first_name}} {{current_user.last_name}}
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <h5>Username:</h5>
+                        <p>
+                            {{current_user.username}}
+                        </p>
+                    </div>
+                    <div class="input-box">
+                        <h5>Mobile:</h5>
+                        <p>
+                            {{current_user.primary_contact}}</p>
+                    </div>
+                </div>
+                <div class="editProPic">
+                    <img id="form-profile-picture" src={{current_user.profile_pic}} alt="">
+                </div>
+            </div>
+            <div class="edit-profile-link">
+                <a href="">Edit Profile</a>
+            </div>
+        </div>
+    </div>
+    <!-- end popup for profile -->
+
+    <!-- start pop up sign out section -->
+    <div id="popup_signout" class="sectionpopnav">
+        <div class="formsectionnav">
+            <div>
+                <button class="closebutton" onclick="close_popup_signout_message()">❌</button>
+            </div>
+            <form action="/action_page.php" style="margin:20px">
+                <div style="margin:auto">
+                    <h1>Sign Out</h1>
+                    <p>Do your really want to sign out now?</p>
+                </div>
+            </form>
+            <div style="display:flex">
+                <button class="popup_buttonnav">
+                    {% if current_user %}
+                    <a href="/logout"> YES</a>
+                    {% endif %}
+                </button>
+                <button onclick="close_popup_signout_message()" class="popup_delete_buttonnav">
+                    NO
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end pop up sign out section -->
+
+    <!-- End Top Navigation Bar -->
+
+
+
+    <section class="page-container">
+        <div class="page-content-container">
+            <div class="container">
+                <div class="sp-arena">
+
+                    <div class="sp-arena-img">
+                        <img src="{{arenaDetails[0].photo1_name}}">
+                    </div>
+                    <div class="sp-arena-details">
+                        <div class="sp-name">
+                            <h2>{{arenaDetails[0].sa_name}}</h2>
+                        </div>
+                        <div class="other">
+                            <h4>Contact No: {{arenaDetails[0].contact_no}}</h4>
+                        </div>
+                        <div class="other">
+                            <h5>Accepted Payment Methods:
+                                {% if arenaDetails[0].payment_method=='card' %}
+                                Card Payments
+                                {% elseif arenaDetails[0].payment_method=='cash' %}
+                                Cash Payments
+                                {% elseif arenaDetails[0].payment_method=='both' %}
+                                Card Payments & Cash Payments
+                                {% endif %}
+                            </h5>
+                            <div class="favorite-deltails">
+                                <div class="add_favorite_button">
+                                    <form action="/customer/addtofavoritelist" method="POST">
+                                        <input id="arena_id" name="arena_id" type="hidden"
+                                            value={{arenaDetails[0].sports_arena_id}}>
+                                        
+                                        <button class="addToFav btn" type="submit">add to favorites </button>
+                                        <button class="addToFavIcon more-link" type="submit"><i
+                                                class="fas fa-heart"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                                <a type="" class="more-link" id="more_details_btn" onclick="open_moredetails()">More
+                                    Details
+                                </a>
+                                <a type="" class="more-link" id="goto_booking_btn" onclick="open_goto_booking()">Go to
+                                    Bookings
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="container2">
+                    <div class="more-details" id="more-details">
+                        <div class="detail">
+                            <div class="description">
+                                <h5>About Sports Arena</h5>
+                                <p>
+                                    {{arenaDetails[0].description}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="Other-facilities">
+                                <h5>Other facilities</h5>
+                                <p>
+                                    {% for other_facility in arenaDetails %}
+                                    <span>{{other_facility.other_facilities}} &nbsp </span>
+                                    {% endfor %}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="detail-grid">
+                            
+                            <div class="google-map">
+                                <iframe
+                                    src=" https://www.google.com/maps/embed/v1/place?key=AIzaSyB2e00P4iPaWX6u26a1MNg-cYKLyY3jsoo&q={{arenaDetails[0].google_map_link}}"
+                                    width="400" height="300" style="border:0;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+
+                            <div class="slide-container">
+                                <img id="slide-left" class="arrow" src="/Assets/images/customer/arrow-left.png">
+                                <section class="slide-container" id="slider">
+
+                                    <div class="thumbnail">
+                                        <img src="{{arenaDetails[0].photo1_name}}" alt="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="{{arenaDetails[0].photo2_name}}" alt="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="{{arenaDetails[0].photo3_name}}" alt="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="{{arenaDetails[0].photo4_name}}" alt="">
+                                    </div>
+                                    <div class="thumbnail">
+                                        <img src="{{arenaDetails[0].photo5_name}}" alt="">
+                                    </div>
+                                </section>
+                                <img id="slide-right" class="arrow" src="/Assets/images/customer/arrow-right.png">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booking" id="booking">
+                        <div class="left-container">
+                            <div style="display: flex;flex-direction: row;align-items: center;justify-content: space-between;">
+                                <div class="heading">
+                                    <h3>Booking Date</h3>
+                                </div>
+    
+                                <div class="date-picker">
+                                    <form method="POST" id="bookingdateform">
+                                    
+                                        <input type="date" id="dateInput" name="dateInput" >
+                                        
+    
+                                        <input type="hidden" id="arenaId" name="arenaId"
+                                            value="{{arenaDetails[0].sports_arena_id}}">
+                                        
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="wrapper">
+
+                                <div id="calendar"></div>
+                                
+                              </div>
+
+                        </div>
+
+                        <div class="right-container">
+                            <div class="available-bookings">
+                                <h2>Available Time Slots</h2>
+                                <ul id="eventsList" class="events-list">
+                                    {% for timeSlot in timeSlots %}
+                                    <li id={{timeSlot.time_slot_id}} class="hideDetails">
+                                        <div class="row">
+                                            <span class="s-time">{{timeSlot.startTime}}</span>&nbsp;-
+                                            <span class="e-time">{{timeSlot.endTime}}</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="facility">{{timeSlot.facility_name}}</span>
+                                        </div>
+                                        <div class="row">
+                                            <span class="price">LKR {{timeSlot.price}}</span>
+
+                                        </div>
+
+                                        <!-- toggle button -->
+                                        <div class="payment_cart">
+                                            {% if arenaDetails[0].payment_method=='card' %}
+                                            <div class="toggle-button-cover">
+                                                <div class="button-cover">
+                                                    <div class="button r" id="button-1">
+                                                        <input type="checkbox" class="checkbox" name="paymentMethod"
+                                                            value="card" checked>
+
+                                                        <div class="layer1">card</div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% elseif arenaDetails[0].payment_method=='cash' %}
+                                            <div class="toggle-button-cover">
+                                                <div class="button-cover">
+                                                    <div class="button r" id="button-1">
+                                                        <input type="checkbox" class="checkbox" name="paymentMethod"
+                                                            value="cash" checked>
+
+                                                        <div class="layer1">cash</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% elseif arenaDetails[0].payment_method=='both' %}
+                                            <div class="toggle-button-cover">
+                                                <div class="button-cover">
+                                                    <div class="button r" id="button-1">
+                                                        <input type="checkbox" class="checkbox"
+                                                            id="{{timeSlot.time_slot_id}}" onclick="paymentclick()"
+                                                            name="paymentMethod" value="card" checked>
+                                                        <div class="knobs"></div>
+                                                        <div class="layer"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endif %}
+
+                                            <div>
+                                                <button class="removeItem" value={{timeSlot.time_slot_id}}
+                                                    type="submit">
+                                                    <i class="fas fa-cart-plus"></i></button>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="timeSlotId" id="timeSlotId" class="timeSlotClass"
+                                            value={{timeSlot.time_slot_id}}>
+                                        <input type="date" name="bookingDate" class="bookingDatehidden"
+                                            style="display: none;">
+                                    </li>
+                                    <!-- </form> -->
+                                    {% endfor %}
+                                </ul>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="cart">
+                    <a href="/customer/cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Start of Footer -->
+    <footer>
+        <div class="copyright">
+            <p>
+                Copyright &copy;2021 All rights reserved | Sportizza Inc.
+            </p>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+    
+    <script type="text/javascript" src="/Assets/js/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/Assets/js/navbar.js?v=8"></script>
+    <script src="/Assets/js/Customer/customer_view_booking_dateChange_ajax.js"></script>
+    <script src="/Assets/js/Customer/newCustomerBooking.js?version=3"></script>
+    
+    <script >
+
+    
+        document.addEventListener('DOMContentLoaded', function() {
+          var calendarEl = document.getElementById('calendar');
+        
+          var calendar = new FullCalendar.Calendar(calendarEl, {
+            headerToolbar: {
+              start: 'prev,today,next',
+              center: 'title',
+              end: 'dayGridMonth,dayGridWeek,listWeek'
+            },
+            timeZone: 'Europe/Berlin',
+            weekNumbers: true,
+            initialView: 'dayGridMonth',
+            eventTimeFormat: {
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: false
+            },
+            views: {
+              dayGridWeek: {
+                titleFormat: '{DD.{MM.}}YYYY'
+              },
+              listWeek: {
+                titleFormat: '{DD.{MM.}}YYYY'
+              }
+            },
+            events: [
+            
+             
+            {% for count in bookingsCount %}
+            {
+                start: moment().subtract('{{count.remainingDates}}', 'days').format('YYYY-MM-DD'),
+                end: moment().subtract('{{count.remainingDates}}', 'days').format('YYYY-MM-DD'),
+                display: 'background',
+                {% if count.bookingCount>5 %}
+                color: '#e74c3c',
+
+                {% elseif count.bookingCount>2  %}
+                color: '#f39c12',
+
+            
+                
+                {% endif %}
+                
+              },
+            {% endfor %}
+
+            
+            ],
+            eventClassNames: function(info) {
+              
+              var result = true;
+              var states = [];
+              var kinds = [];
+              
+              // Find all checkbox that are event filters and enabled and save the values.
+              $("input[name='event_filter_sel']:checked").each(function () {
+                // Saving each type separately
+                if ($(this).data('type') == 'state') {
+                  states.push($(this).val());
+                }
+                else if ($(this).data('type') == 'kind') {
+                  kinds.push($(this).val());
+                }
+              });
+              
+              // If there are locations to check
+              if (states.length) {
+                result = result && states.indexOf(info.event.extendedProps.state) >= 0;
+              }
+              // If there are specific types of events
+              if (kinds.length) {
+                result = result && kinds.indexOf(info.event.extendedProps.kind) >= 0 || info.event.extendedProps.kind == 'holiday';
+              }
+              
+              if (!result) {
+                result = "hidden";
+              }
+              
+              return result;
+            },
+        
+            windowResize: function(view) {
+              var current_view = view.type;
+              var expected_view = $(window).width() > 800 ? 'dayGridMonth' : 'listWeek';
+              if (current_view !== expected_view) {
+                calendar.changeView(expected_view);
+              }
+            },
+          });
+        
+          calendar.render();
+        
+          if ($(window).width() < 800) {
+            calendar.changeView('listWeek');
+          }
+        
+          $('input[class=event_filter]').change(function() {
+            calendar.render();
+          });
+            
+        });
+        
+        </script>
+
+</body>
+
+</html>

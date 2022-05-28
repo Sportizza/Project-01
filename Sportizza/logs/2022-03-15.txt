@@ -1,0 +1,8 @@
+[15-Mar-2022 07:13:11 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[15-Mar-2022 07:13:28 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93

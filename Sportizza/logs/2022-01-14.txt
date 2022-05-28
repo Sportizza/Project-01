@@ -1,0 +1,16 @@
+[14-Jan-2022 07:14:02 Europe/Berlin] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 96
+[14-Jan-2022 07:14:03 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[14-Jan-2022 07:16:00 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93
+[14-Jan-2022 07:19:24 Europe/Berlin] Uncaught exception: 'Exception' with message 'Controller class App\Controllers\Announce not found'
+Stack trace: #0 F:\xammp\htdocs\Group_Project-_1\Sportizza\public\index.php(45): Core\Router->dispatch('announce')
+#1 {main}
+Thrown in 'F:\xammp\htdocs\Group_Project-_1\Sportizza\Core\Router.php' on line 93

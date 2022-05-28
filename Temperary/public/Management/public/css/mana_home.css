@@ -1,0 +1,373 @@
+.profile-container
+{
+  width: 94%;
+  margin:1em auto;
+
+}
+.profile-disc-header{
+  margin: .1em;
+  display: flex;
+}
+.profile-picture{
+  margin-top: 1.5em;
+}
+.profile-picture .image-change{
+  height: 10px;
+}
+
+.profile-picture img{
+  border: 1px solid #444444;
+  border-radius: 20px;
+  height: 13em;
+  margin: .5em;
+  background-color: #fafafa;
+  width: 250px;
+  margin: .5em;
+  padding: 1em;
+  border-radius: 20px;
+  object-fit: contain;
+}
+.profile-picture i{
+  position: relative;
+  top: -4em;
+  left: 4em;
+  background-color: rgb(223, 223, 223);
+  color: #444444;
+  padding: .5em;
+  margin: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+ .profile-disc-header h3{
+    font-size: 2rem;
+    margin: .2em;
+ }
+
+.profile-disc-header p{
+    margin: 15px;
+    font-size: 16px;
+    text-align: justify;
+ }
+ 
+ .profile-details .features{
+   display: flex;
+  }
+  .profile-details .features .details-block{
+    margin-left: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--light-orange-dull);
+    padding: 10px 15px;
+  }
+  .profile-details .features .details-block:hover{
+    opacity: 0.9;
+  }
+
+
+ 
+
+  .arrow {
+      width: 2rem;
+      margin: 0 1rem;
+  }
+
+  .slide-container {
+      width: 100%;
+      /* height: 300px; */
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      /* border: 1px solid black; */
+  }
+
+  .slide-container::-webkit-scrollbar {
+      display: none;     
+  }
+ 
+  .slide-container::-webkit-scrollbar-thumb {
+      background-color: var(--color-primary);
+      outline: 1px solid #eee;
+      /* border-radius: 100px; */
+    }
+
+  .slide-container .thumbnail {
+      flex: 0 0 auto;
+      object-fit: cover;
+      cursor: pointer;
+      margin: 5px;
+      width: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      transform: scale(.95);
+      transition: all .3s;
+  }
+
+  .slide-container .thumbnail:hover {
+      transform: scale(1);
+      
+  }
+
+  .ground-images h4{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: .5em;
+  }
+
+.other-facility{
+  margin-top: 1em;
+  margin-left:4em ;
+  font-size: 1.2rem;
+}
+.facility-header{
+  display: flex;
+}
+.facility-header ul{
+  display: flex;
+
+}
+.facility-header li{
+  margin-left: 1em;
+}
+
+
+/* This is the Report CSS Part */
+.report-container{
+	display: flex;
+}
+
+.statics h2{
+	color: #444444;
+	text-align: center;
+	font-weight: 700;
+  margin-bottom: 1em;
+
+}
+.stat{
+	text-align: center;
+	border-radius: 20px;
+}
+.stat-con{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.statics{
+  margin-bottom: 2em;
+}
+
+
+.statics .one {
+	width: 25%;
+	border: 2px solid #ADD8E6;
+	margin: 0px 10px 0px 30px;
+}
+
+.statics .one:hover {
+	border: 2px solid #ADD8E6;
+	background-color: #ADD8E6;
+	cursor: default;
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 0px #ADD8E6;
+}
+
+.statics .two {
+	width: 25%;
+	border: 2px solid #fbc933;
+	margin: 0px 10px 0px 10px;
+}
+
+.statics .two:hover {
+	border: 2px solid #fbc933;
+	background-color: #fbc933;
+	cursor: default;
+	transition: 0.5s;
+	box-shadow: 0px 0px 20px 0px #fbc933;
+}
+
+.statics .three {
+	width: 25%;
+	border: 2px solid #23f15b;
+	margin: 0px 10px 0px 10px;
+}
+
+.statics .three:hover {
+	border: 2px solid #23f15b;
+	background-color: #23f15b;
+	cursor: default;
+	transition: 0.5s;
+	box-shadow: 0px 0px 20px 0px #23f15b;
+}
+.chart-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.chart-container h3{
+  margin-bottom: .5em;
+}
+
+/*Log Out*/
+/*delete staff*/
+/* Set a style for all buttons */
+.log-out .clearfix button {
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 40%;
+	opacity: 0.9;
+  border-radius: 20px;
+  font-size: 1.2em;
+  }
+  
+  .log-out .clearfix button:hover {
+	opacity:1;
+  }
+  
+ 
+  
+  /* Add a color to the cancel button */
+  .log-out .log-out .clearfix .cancel-staff-button {
+	background-color: #ccc;
+	color: black;
+  }
+  
+  /* Add a color to the delete button */
+  .log-out .clearfix .log-out-btn {
+	background-color: #f44336;
+  }
+  
+  /* Add padding and center-align text to the container */
+  .log-out .clearfix .log-out-con {
+	padding: 16px;
+	text-align: center;
+  }
+  
+  /* The Modal (background) */
+  .log-out{
+	text-align: center;
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgba(0,0,0,0.4); 
+	padding-top: 150px;
+  }
+
+  
+  /* Modal Content/Box */
+  .log-out .log-out-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 80%; /* Could be more or less, depending on screen size */
+	padding: 20px;
+	border-radius: 20px;
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
+  }
+
+  /* Clear floats */
+  .log-out .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+	.log-out .cancelbutton,.log-out-btn {
+	   width: 100%;
+	}
+  }
+
+  
+  @media screen and (max-width: 992px) {
+    
+    .profile-container{
+     width: 100%;
+      
+    }
+    .profile-disc-header{
+      margin: .1em;
+    }
+    
+    .profile-picture img{
+      width: 210px;
+      height: 200px;
+    }
+    .profile-disc-header h3{
+      font-size: 1.7rem;
+    }
+
+    .profile-disc-header p{
+      font-size: 14px;
+    }
+    .profile-details{
+      margin: 10px;
+    }
+    .profile-details .features{
+      width: 300px;
+    }
+    .profile-details .features .details-block{
+      padding: 5px 10px;
+    }
+    
+
+    .slide-container .thumbnail{
+      width: 250px;
+    }
+    
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .section{
+      display: flex;
+      flex-direction: column;
+    }
+    .side-nav{
+      display: none;
+    }
+    .container{
+      width: 90%;
+      position: relative;
+      left: auto;
+    }
+    
+    @media screen and (max-width:576px)
+    {
+      
+      .section{
+        display: flex;
+        flex-direction: column;
+      }
+      .side-nav{
+        display: none;
+      }
+      .container{
+        width: 90%;
+        position: relative;
+        left: auto;
+    }
+  }
+
+
+
+

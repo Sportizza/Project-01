@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/Assets/css/flashMessages.css?version=1">
+        <link rel="stylesheet" href="/Assets/css/editprofile.css?version=15">
+        <link rel="stylesheet" href="/Assets/css/editMobile.css?version=15">
+        <link
+        rel="stylesheet" href="/Assets/css/flashMessages.css?version=1">
+        <!-- Manifest file -->
+        <link rel="manifest" href="/./manifest.json"/>
+        <script src="https://kit.fontawesome.com/3220c9480a.js" crossorigin="anonymous"></script>
+
+        <title>Moble Number Reset</title>
+    </head>
+
+    <body>
+        <!-- Top Navigation Bar -->
+        <nav>
+            <div class="nav-left">
+                <div class="logo-container">
+                    <a href="/">
+                        <i class="fas fa-running"></i>
+                        <span class="logo-name">Sportizza</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="alert" style="display:none"></div>
+            </div>
+        </nav>
+        <!-- End Top Navigation Bar -->
+        <section
+            class="page-container">
+            <!-- start mobile number section -->
+            <div class="sectionpop">
+                <div class="formsection">
+                    <div>
+                        <a href="/Edituserdetails/EditProfileAction" class="closebutton">❌</a>
+                    </div>
+                    <div class="popup-header">
+                        <h2>Mobile Number Reset</h2>
+                    </div>
+                    <!-- Edituserdetails/updatepassword -->
+                    <!-- <form style="margin:20px 20px 0px 20px" action="/" method="post">
+                                                {% for message in flash_messages %}
+                                                <div class="alert alert-{{ message.type }}">
+                                                  {{ message.body }}
+                                                </div>
+                                                {% endfor %} -->
+                    <form id="mobileForm" action="/Edituserdetails/redirectotppage" method="post" onsubmit="validateMobileResetForm()">
+                        <div class="input-box">
+                            <label for="mobile">Mobile Number</label>
+                            <input id="mobile" type="text" name="mobile_number" onfocusout="validateMobile()" placeholder="Enter new mobile number">
+                            <div class="helper-text" id="mobileMsg">
+                                {% for message in flash_messages %}
+                                    <div class="alert alert-{{ message.type }}">
+                                        {{ message.body }}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div style="display:flex" class="response_buttons">
+                            <input type="submit" class="popup_button" value="YES">
+                            <a href="/Edituserdetails/EditProfileAction" class="popup_button red">
+                                NO
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end edit mobile number section -->
+        </section>
+        <!-- Start of Footer -->
+        <footer>
+            <div class="copyright">
+                <p>
+                    Copyright &copy;2021 All rights reserved | Sportizza Inc.
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+
+    </body>
+
+</html>
